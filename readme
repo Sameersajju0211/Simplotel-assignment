@@ -1,0 +1,112 @@
+# Responsive Food Ordering Website
+
+This project is a responsive food ordering website with a navigation bar, home section, and an order section showcasing different food items. The website is built using HTML and CSS.
+
+## Features
+
+- Responsive Navigation Bar
+- Home Section with a Welcome Card
+- Order Section with Food Items
+- Mobile-friendly Design
+
+## Technologies Used
+
+- HTML
+- CSS
+
+## Fonts
+
+The website uses the following fonts from Google Fonts:
+- Bree Serif
+- Caveat
+- Lobster
+- Monoton
+- Open Sans
+- Playfair Display SC
+- Playfair Display
+- Roboto
+- Source Sans Pro
+- Work Sans
+
+## Getting Started
+
+### Prerequisites
+
+- A web browser to view the website.
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/your-repo-name.git
+Navigate to the project directory:
+bash
+Copy code
+cd your-repo-name
+Usage
+Open the index.html file in your web browser to view the website.
+Responsive Design
+The website is designed to be responsive. The navigation links and icons are hidden on mobile devices, and a menu toggle button is displayed. The order section displays food items in a column layout on mobile devices and in a row layout on larger devices.
+
+Media Queries
+The following media query is used to make the website responsive:
+
+css
+Copy code
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-icons {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .item-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+Additional Styles for Responsiveness
+css
+Copy code
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-icons {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .item-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+Screenshots
+Desktop View
+
+Mobile View
