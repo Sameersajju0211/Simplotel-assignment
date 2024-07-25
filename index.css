@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.nav {
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+}
+
+.nav-links a:hover {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-icons a img {
+    height: 30px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-icons {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+.page-container {
+    background-image: url("https://i.imghippo.com/files/Ognkq1721883676.jpg");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+}
+
+.home-card {
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+    width: 500px;
+    height: 200px;
+    border-radius: 8px;
+    text-align: start;
+    background-color: rgba(187, 117, 118, 0.8); /* Semi-transparent white background */
+    backdrop-filter: blur(1px);
+    color: white; /* Ensures text is readable */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-card-heading {
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+.home-card-para {
+    font-family: ui-sans-serif;
+    font-weight: 200;
+}
+
+.order-now-section {
+    background-image: linear-gradient(to right, #d470a2, #ecbe53);
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+    padding: 10px;
+}
+
+.order-now-heading {
+    color: #ffffff;
+    font-family: Sans-Serif;
+    text-align: center;
+}
+
+.item-card {
+    background-color: #ffffff;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 300px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    margin-left: 20px;
+}
+
+.item-card-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px; /* Adds padding around the items */
+    gap: 10px; /* Adds space between items */
+}
+
+.item-image {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.order-button {
+    color: black;
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(1px);
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 0;
+    height: 50px;
+    font-size: 15px;
+    width: 150px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .item-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.fa-brands {
+    color: black;
+}
